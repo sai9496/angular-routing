@@ -6,5 +6,12 @@ app.config(function($stateProvider) {
         templateUrl: "../home.html",
         controller: "homeCtrl"
     };
+    var contactState = {
+        name: "contact",
+        url: "/contact",
+        templateUrl: "../contact.html",
+        controller: "contactCtrl"
+    };
     $stateProvider.state(homeState);
+    $stateProvider.state(contactState);
 });
