@@ -12,6 +12,13 @@ app.config(function($stateProvider) {
         templateUrl: "../contact.html",
         controller: "contactCtrl"
     };
+    var servicesState = {
+        name: "services",
+        url: "/services",
+        templateUrl: "../services.html",
+        controller: "servicesCtrl"
+    };
     $stateProvider.state(homeState);
     $stateProvider.state(contactState);
+    $stateProvider.state(servicesState);
 });
