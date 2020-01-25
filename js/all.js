@@ -23,9 +23,16 @@ app.config(function($stateProvider) {
         url: "/products",
         templateUrl: "../product.html",
         controller: "productCtrl"
-    }
+    };
+    var profileState = {
+        name: "Profile",
+        url: "/Profile",
+        templateUrl: "../profile.html",
+        controller: "profileCtrl"
+    };
     $stateProvider.state(homeState);
     $stateProvider.state(contactState);
     $stateProvider.state(servicesState);
     $stateProvider.state(productState);
+    $stateProvider.state(profileState);
 });
